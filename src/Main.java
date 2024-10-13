@@ -5,12 +5,12 @@ import java.util.Scanner;
 public class Main {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
-        System.out.println("Introduzca tu edad");
-        int numero = sc.nextInt();
-        while (numero < 18 || numero > 120) {
-            System.out.println("Seguro?");
-            numero = sc.nextInt();
+        System.out.println("Introduzca un numero");
+        int veces = sc.nextInt();
+        while (veces > 0) {
+            System.out.println("Veces es " + veces);
+            veces--;
         }
-        System.out.println("Bienvenido!");
+        System.out.println("Fin");
     }
 }
